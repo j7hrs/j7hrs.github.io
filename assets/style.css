@@ -12,12 +12,13 @@
 
 .background-video {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%; /* Add this */
+  left: 50%; /* Add this */
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
-  z-index: -1; /* Make sure the video is behind other elements */
+  transform: translate(-50%, -50%); /* Add this */
+  z-index: -1;
 }
 
 .title {
